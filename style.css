@@ -1,0 +1,388 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 65%;
+    
+}
+nav i{
+    filter: invert(28%) sepia(94%) saturate(1176%) hue-rotate(90deg) brightness(95%) contrast(107%);
+    margin: 1rem;
+    /* position: absolute; */
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    animation: iconanimation 1s ease  infinite ;
+}
+.herosection{
+    background: linear-gradient(rgba(0,0,0,0.6) , rgba(0,0,0,0.6)) , url(herosection.jpeg)   no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 98.7vw;
+    position: relative;
+    
+}
+.lineair{
+    height: .8rem;
+    background-image: linear-gradient(to right , green , yellow , green);
+}
+.for{
+    display: flex;
+    
+}
+.coffee h2{
+    letter-spacing: 7px;
+    
+    /* color: red; */
+    margin: 3rem 0;
+    text-transform: uppercase;
+    color: green;
+    transition: all 1s;
+}
+.coffee p{
+    color: #444;
+    font-size: 1.7rem;
+    line-height: 1.7;
+    text-align: center;
+    width: 90%;
+}
+.i{
+    transition: all 1s;
+}
+.coffee{
+    background-color: rgba(128, 128, 128, 0.29);
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 1s;
+    font-family: 'rubik';
+}
+.coffee:hover{
+     background-color: green;
+}
+.coffee:hover .i{
+     transform: translateY(-.5rem);
+}
+.coffee:hover h2{
+     color: white;
+}
+section{
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height:100%; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* text-align: center; */
+    width: 60%;
+    display: grid;
+}
+section h2{
+    color: green;
+    font-size: 2rem;
+    position: relative;
+    /* left: 100%;
+    right: 0; */
+    text-align: center;
+    animation: firstanimation 3s linear  both ;
+    font-family: 'Dancing Script', cursive;
+}
+section h1{
+    color: white;
+    font-size: 5rem;
+    text-transform: uppercase; 
+    margin: 3rem 0; 
+    text-align: center;
+    position: relative;
+    animation: secondanimation 3s linear  both ;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1rem;
+}
+
+.but{
+    width: 17rem;
+    height: 7.2rem;
+    justify-self: center;
+    animation: buttonanimation 3s ease-in-out  both ;
+    background-color: green;
+    border: none;
+    padding: 2rem 0;
+    text-transform: uppercase;
+    font-family: 'Rubik';
+    letter-spacing: .5rem;
+    outline: 0.4rem solid green;
+    outline-offset: .4rem;
+    font-size: 2rem;
+    color: #333;
+}
+.butt{
+    transform: translateX(1rem);
+    width: 15rem;
+    height: 5rem;
+    background-color: green;
+    border: none;
+    padding: 0;
+    text-transform: uppercase;
+    font-family: 'Rubik';
+    letter-spacing: .2rem;
+    outline: 0.4rem solid green;
+    outline-offset: .4rem;
+    font-size: 1.5rem;
+    color: #333;
+    margin-top: 2rem;
+}
+.buttt{
+    transform: translateX(1rem);
+    width: 10rem;
+    height: 4rem;
+    background-color: green;
+    border: none;
+    padding: 0;
+    text-transform: uppercase;
+    font-family: 'Rubik';
+    letter-spacing: .2rem;
+    outline: 0.2rem solid green;
+    outline-offset: .4rem;
+    font-size: 1.5rem;
+    color: black;
+    margin-top: 2rem;
+}
+@keyframes firstanimation{
+    0%{
+        left: 60%;
+    }
+    40%{
+        left: -25%;
+    }
+    75%{
+        left: 10%;
+    }
+    100%{
+        left: 0;
+    }
+}
+@keyframes secondanimation{
+    0%{
+        left: -60%;
+    }
+    40%{
+        left: 25%;
+    }
+    75%{
+        left: -10%;
+    }
+    100%{
+        left: 0;
+    }
+}
+@keyframes buttonanimation{
+    0%{
+        transform: scale(2);
+        opacity: 0%;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 100%;
+    }
+    
+}
+@keyframes iconanimation{
+    0%{
+        transform: scale(1);
+        
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+        
+    }
+    
+}
+.brad{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5rem;
+}
+.bradatay{
+    border: .8rem solid green;
+    height: 30rem;
+    border-radius: 1.7rem;
+    overflow: hidden;
+    
+}
+.bradatay img{
+    border-radius: 1rem;
+    transition: all 1s;
+}
+.bradatay img:hover{
+    transform: scale(1.3);
+    opacity: .8;
+}
+.atay h2{
+    font-family: 'Pacifico', cursive;
+    color: green;
+    font-size: 3rem;
+}
+.atay{
+    width: 35%;
+}
+.atay h1{
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: .5rem;
+    margin: 1rem 0 1.3rem;
+}
+.atay p{
+    font-size: 1.4rem;
+   line-height: 1.4;
+    color: #444;
+    font-family: 'Rubik';
+    margin-bottom: 1.5rem;
+}
+.article1{
+    background-color: #444;
+    display: flex;
+    justify-content: space-around;
+    padding: 5rem;
+}
+.products img{
+    border-radius: .7rem;
+}
+.products h2{
+    color: white;
+    letter-spacing: .5rem;
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    margin: 2.5rem 0 1.5rem;
+    width: 60%;
+}
+.products h5{
+    color: green;
+    font-size: 1.5rem;
+    letter-spacing: .5rem;
+    font-family: 'Pacifico', cursive;
+}
+.main-article1{
+    width: 29%;
+}
+.main-article1 h2{
+    color: green;
+    font-family: 'Pacifico', cursive;
+    font-size: 2.9rem;
+}
+.main-article1 h1{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: .3rem;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+}
+.main-article1 p{
+    color: white;
+    font-family: Rubik;
+    font-size: 1.4rem;
+    width: 93%;
+    line-height: 1.7;
+    margin: 1.2rem 0;
+}
+.products div{
+    animation: rotate-scale-up 0.65s linear both;
+}
+@keyframes rotate-scale-up {
+    0% {
+      -webkit-transform: scale(1) rotateZ(0);
+              transform: scale(1) rotate(0);
+    }
+    50% {
+      -webkit-transform: scale(2) rotateZ(180deg);
+              transform: scale(2) rotate(180deg);
+    }
+    100% {
+      -webkit-transform: scale(1) rotateZ(360deg);
+              transform: scale(1) rotate(360deg);
+    }
+  }
+  .article2{
+    display: flex;
+    justify-content: space-around;
+    padding: 6.5rem 5rem 5rem;
+  }
+  .contact i{
+    filter: invert(25%) sepia(99%) saturate(1490%) hue-rotate(95deg) brightness(96%) contrast(105%);
+  }
+  .contact span{
+    color: green;
+    font-size: 3rem;
+    font-family: 'Pacifico', cursive;
+    text-transform: uppercase;
+    margin-left: 1rem;
+  }
+  .contact p{
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    font-family: 'Rubik';
+    margin: 2rem 0 3rem;
+  }
+  /* .contact{
+    width: 50%;
+  } */
+  .send input,.zzz{
+    font-size: 1.5rem;
+    border-bottom: 2px solid green;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    padding-bottom: 1.4rem;
+    margin-bottom: 2rem;
+    width: 50rem;
+  }
+  ::-webkit-input-placeholder{
+    color:green;
+    letter-spacing: .5rem;
+    text-transform: uppercase;
+  }
+  .zzz{
+    font-size: 1.7rem;
+    font-family: 'Rubik';
+  }
+  footer{
+    padding: 5rem;
+    background-color: #444;
+    display: grid;
+    justify-content: center;
+  }
+  footer i{
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(190deg) brightness(107%) contrast(102%);
+  }
+  .reseau{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+  footer p{
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: .5rem;
+    font-size: 1.5rem;
+    font-family: 'Rubik';
+  }
+  footer p span{
+    color: green;
+  }
+button:hover{
+    /* opacity: .8; */
+ background: linear-gradient(rgba(0,0,0,0.6) , rgba(0,0,0,0.6)) ; 
+}
